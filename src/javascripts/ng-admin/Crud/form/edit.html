@@ -6,7 +6,7 @@
                 <ma-delete-button ng-if="::entity.deletionView().enabled" entry="entry" entity="::entity"></ma-delete-button>
             </ma-view-actions>
             <h1 compile="::formController.title">
-                Edit {{ ::formController.entity.name() | humanize:true | singularize }}  #{{ ::entry.identifierValue }}
+                编辑 {{ ::formController.entity.label() | humanize:true | singularize }}  #{{ ::entry.identifierValue }}
             </h1>
             <p class="lead" ng-if="::formController.description" compile="::formController.description">{{ ::formController.description }}</p>
         </div>
@@ -21,7 +21,7 @@
 
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-ok"></span> Save Changes</button>
+                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-ok"></span> 保存修改</button>
             </div>
         </div>
     </form>
