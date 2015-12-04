@@ -53,7 +53,7 @@ export default class FormController {
             .createOne(view, restEntry)
             .then(rawEntry => {
                 this.progression.done();
-                this.notification.log('Element successfully created.', { addnCls: 'humane-flatty-success' });
+                this.notification.log('成功创建元素.', { addnCls: 'humane-flatty-success' });
                 var entry = view.mapEntry(rawEntry);
                 this.$state.go(this.$state.get(route), { entity: entity.name(), id: entry.identifierValue });
             }, this.handleError.bind(this));
@@ -71,7 +71,7 @@ export default class FormController {
             .updateOne(view, restEntry, this.originEntityId)
             .then(() => {
                 this.progression.done();
-                this.notification.log('Changes successfully saved.', { addnCls: 'humane-flatty-success' });
+                this.notification.log('成功保存修改.', { addnCls: 'humane-flatty-success' });
             }, this.handleError.bind(this));
     }
 

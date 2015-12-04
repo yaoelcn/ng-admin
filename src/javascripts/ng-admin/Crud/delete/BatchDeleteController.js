@@ -26,7 +26,7 @@ export default class BatchDeleteController {
             $state.go($state.get('list'), angular.extend({
                 entity: entityName
             }, $state.params));
-            notification.log('Elements successfully deleted.', { addnCls: 'humane-flatty-success' });
+            notification.log('成功删除元素.', { addnCls: 'humane-flatty-success' });
         }, function (response) {
             // @TODO: share this method when splitting controllers
             var body = response.data;

@@ -40,7 +40,7 @@ export default class DeleteController {
                             this.back();
                         }
 
-                        notification.log('Element successfully deleted.', { addnCls: 'humane-flatty-success' });
+                        notification.log('成功删除元素.', { addnCls: 'humane-flatty-success' });
                     });
                 },
                 response => {
