@@ -40,7 +40,7 @@ export default class DeleteController {
                             this.back();
                         }
 
-                        notification.log('成功删除元素.', { addnCls: 'humane-flatty-success' });
+                        notification.log('成功删除元素', { addnCls: 'humane-flatty-success' });
                     });
                 },
                 response => {
@@ -50,7 +50,7 @@ export default class DeleteController {
                         body = JSON.stringify(body);
                     }
 
-                    notification.log('Oops, an error occured : (code: ' + response.status + ') ' + body, {addnCls: 'humane-flatty-error'});
+                    notification.log('啊, 发生了一个错误 : (错误码: ' + response.status + ') ' + body, {addnCls: 'humane-flatty-error'});
                 }
             );
     }
