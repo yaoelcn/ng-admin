@@ -26,7 +26,7 @@ export default class BatchDeleteController {
             $state.go($state.get('list'), angular.extend({
                 entity: entityName
             }, $state.params));
-            notification.log('成功删除元素', { addnCls: 'humane-flatty-success' });
+            notification.log('删除成功', { addnCls: 'humane-flatty-success' });
         }, function (response) {
             // @TODO: share this method when splitting controllers
             var body = response.data;
@@ -34,7 +34,7 @@ export default class BatchDeleteController {
                 body = JSON.stringify(body);
             }
 
-            notification.log('啊, 发生了一个错误 : (错误码: ' + response.status + ') ' + body, {addnCls: 'humane-flatty-error'});
+            notification.log('发生了一个错误 : (错误码: ' + response.status + ') ' + body, {addnCls: 'humane-flatty-error'});
         });
     }
 
