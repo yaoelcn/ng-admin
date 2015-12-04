@@ -1,5 +1,5 @@
 # 
-FROM ubuntu14.04
+FROM ubuntu
 MAINTAINER yaoel "yaoel@outlook.com"
 
 # Install any packages that must be installed.
