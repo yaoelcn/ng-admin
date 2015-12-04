@@ -1,5 +1,5 @@
 # 
-FROM daocloud.io/yaoel/ng-admin:latest
+FROM ubuntu14.04
 MAINTAINER yaoel "yaoel@outlook.com"
 
 # Install any packages that must be installed.
